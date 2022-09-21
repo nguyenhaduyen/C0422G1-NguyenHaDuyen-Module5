@@ -9,12 +9,10 @@
         #navbar {
             background: linear-gradient(to right, #3d7eaa, #ffe47a);
         }
-        a {
+
+        .text_nav {
             font-family: cursive;
             font-size: 18px;
-        }
-        input {
-            font-family: cursive;
         }
         button {
             font-family: cursive;
@@ -31,18 +29,19 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <div class="col-1">
                     <li class="nav-item">
-                        <a class="nav-link active text-light" aria-current="page" href="/">Home</a>
+                        <a class="nav-link active text-light text_nav" aria-current="page" href="/">Home</a>
                     </li>
                 </div>
                 <div class="col-1"></div>
                 <div class="col-2">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown2" role="button"
+                        <a class="nav-link dropdown-toggle text-light text_nav" href="#" id="navbarDropdown2"
+                           role="button"
                            data-bs-toggle="dropdown" aria-expanded="false">
                             Employee
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                            <li><a class="dropdown-item" href="/listEmployee">List Employee</a></li>
+                            <li><a class="dropdown-item text_nav" href="/listEmployee">List Employee</a></li>
                             </a></li>
                         </ul>
                     </li>
@@ -50,13 +49,14 @@
                 <div class="col-1"></div>
                 <div class="col-2">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown1" role="button"
+                        <a class="text_nav nav-link dropdown-toggle text-light" href="#" id="navbarDropdown1"
+                           role="button"
                            data-bs-toggle="dropdown" aria-expanded="false">
                             Customer
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                            <li><a class="dropdown-item" href="/listCustomer">List</a></li>
-                            <li><a class="dropdown-item" href="/customerAdd">
+                            <li><a class="dropdown-item text_nav" href="/listCustomer">List</a></li>
+                            <li><a class="dropdown-item text_nav" href="/customerAdd">
                                 Add New Customer
                             </a></li>
                         </ul>
@@ -64,26 +64,27 @@
                 </div>
                 <div class="col-1"></div>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
+                    <a class="nav-link dropdown-toggle text-light text_nav" href="#" id="navbarDropdown" role="button"
                        data-bs-toggle="dropdown" aria-expanded="false">
                         Service
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="/listFacility">List</a></li>
-                        <li><a class="dropdown-item" href="/addFacility">
+                        <li><a class="dropdown-item text_nav" href="/listFacility">List</a></li>
+                        <li><a class="dropdown-item text_nav" href="/addFacility">
                             Add New Service
                         </a></li>
                     </ul>
                 </li>
                 <div class="col-1">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown3" role="button"
+                        <a class="nav-link dropdown-toggle text-light text_nav" href="#" id="navbarDropdown3"
+                           role="button"
                            data-bs-toggle="dropdown" aria-expanded="false">
                             Contact
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
-                            <li><a class="dropdown-item" href="/listContract">List Contact</a></li>
-                            <li><a class="dropdown-item" href="contact/add_new_contact.jsp">
+                            <li><a class="dropdown-item text_nav" href="/listContract">List Contact</a></li>
+                            <li><a class="dropdown-item text_nav" href="contact/add_new_contact.jsp">
                                 Add New Contact
                             </a></li>
                         </ul>

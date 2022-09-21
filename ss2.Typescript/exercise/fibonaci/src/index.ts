@@ -1,0 +1,11 @@
+function fibonaci(n : number) :number{
+if (n==0) return 0;
+if(n==1||n==2) return 1;
+return fibonaci(n-1)+fibonaci(n-2);
+}
+let i = 10;
+let sum=0;
+for (let j = 0 ; j<i;j++) {
+    sum +=fibonaci(j);
+}
+console.log(sum)
