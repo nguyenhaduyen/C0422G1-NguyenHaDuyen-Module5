@@ -1,0 +1,14 @@
+<h2 class="text-center mt-3">Calculator</h2>
+<div class="container mb-2">
+  <input class="form-control w-25 m-auto mb-2" type="number" [(ngModel)]="number1">
+  <input class="form-control w-25 m-auto mb-2" type="number" [(ngModel)]="number2">
+  <select [(ngModel)]="operand" class="form-control w-25 m-auto">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+  </select>
+  <p class="text-center">{{calculator(number1,number2,operand)}}</p>
+</div>
+
+
