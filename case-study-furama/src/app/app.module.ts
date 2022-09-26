@@ -9,7 +9,9 @@ import { FooterComponent } from './component/footer/footer.component';
 import { HomeComponent } from './component/home/home.component';
 import { ServiceUpdateComponent } from './component/service/service-update/service-update.component';
 import { ServiceAddComponent } from './component/service/service-add/service-add.component';
-import { CustomerComponent } from './component/customer/customer.component';
+import { CustomerListComponent } from './component/customer/customer-list/customer-list.component';
+import { CustomerAddComponent } from './component/customer/customer-add/customer-add.component';
+import { CustomerUpdateComponent } from './component/customer/customer-update/customer-update.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { CustomerComponent } from './component/customer/customer.component';
     HomeComponent,
     ServiceUpdateComponent,
     ServiceAddComponent,
-    CustomerComponent
+    CustomerListComponent,
+    CustomerAddComponent,
+    CustomerUpdateComponent
   ],
   imports: [
     BrowserModule
