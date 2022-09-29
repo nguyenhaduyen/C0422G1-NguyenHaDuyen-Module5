@@ -1,0 +1,49 @@
+<form [formGroup]="form" (ngSubmit)="getForm()">
+  <h3>REGISTER FORM</h3>
+  <p>Email</p>
+  <input type="text" formControlName="email">
+  <p style="color: red" *ngIf="form.controls.email.hasError('required') && form.controls.email.touched">
+    Khong dc de trong
+  </p>
+  <p style="color: red" *ngIf="form.controls.email.hasError('email') && form.controls.email.touched">
+    Email sai dinh dang
+  </p>
+  <div formGroupName="pass">
+    <p>Password</p>
+    <input type="password" formControlName="password">
+    <p style="color: red" *ngIf="form.controls.pass.controls.password.hasError('minlength')">
+      phai nhap tren 6 ki tu
+    </p>
+    <p>Confirm password</p>
+    <input type="password" formControlName="confirmPassword">
+    <p style="color: red" *ngIf="form.controls.pass.hasError('invalidPass') && form.controls.pass.touched">
+      Can xac thuc dung password
+    </p>
+  </div>
+
+  <p>Country</p>
+  <select>
+    <option [ngValue]="c.id" *ngFor="let c of country"></option>
+  </select>
+  <p>Age</p>
+  <input type="text" formControlName="age"><br>
+  <p style="color: red" *ngIf="form.controls.age.hasError('min') && form.controls.age.touched">
+    Nhap so tuoi phai tren 18
+  </p>
+  <p style="color: red" *ngIf="form.controls.age.hasError('required') && form.controls.age.touched">
+    Tuoi khong duoc de trong
+  </p>
+  <span>Nam</span>
+  <input type="radio" formControlName="gender" value="nam">
+  <span>Nữ</span>
+  <input type="radio" formControlName="gender" value="nữ">
+  <p>Phone</p>
+  <input type="text" formControlName="phone"><br>
+  <p style="color: red" *ngIf="form.controls.phone.hasError('pattern') && form.controls.phone.touched">
+    Nhap sai dinh dang sdt
+  </p>
+  <p style="color: red" *ngIf="form.controls.phone.hasError('required') && form.controls.phone.touched">
+    SDT khong duoc de trong
+  </p>
+  <button type="submit">Save</button>
+</form>
