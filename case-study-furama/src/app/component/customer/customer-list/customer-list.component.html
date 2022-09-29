@@ -17,16 +17,16 @@
     <th scope="col">Delete</th>
     </thead>
     <tbody>
-    <tr>
-      <td>1</td>
-      <td>Nguyễn Hà Duyên</td>
-      <td>23/07/2000</td>
-      <td>Nam</td>
-      <td>201772407</td>
-      <td>0915164418</td>
-      <td>nguyenhaduyen23@gmail.com</td>
-      <td>256 Trần Quang Khải</td>
-      <td>Member</td>
+    <tr *ngFor="let c of customer">
+      <td>{{c.customerCode}}</td>
+      <td>{{c.customerName}}</td>
+      <td>{{c.dateOfBirth}}</td>
+      <td>{{c.gender}}</td>
+      <td>{{c.identify}}</td>
+      <td>{{c.phoneNumber}}</td>
+      <td>{{c.email}}</td>
+      <td>{{c.address}}</td>
+      <td>{{c.customerType}}</td>
       <td>
         <button class="btn btn-danger">Xóa</button>
       </td>
