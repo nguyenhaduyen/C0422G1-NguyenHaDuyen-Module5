@@ -1,0 +1,7 @@
+<h2>Trang từ điển</h2>
+<div *ngFor="let dic of dictionaries">
+  <p>
+    {{dic.word}} : {{dic.mean}}
+    <button type="button" [routerLink]="['/dictionary',dic.word]">Detail</button>
+  </p>
+</div>

@@ -1,0 +1,19 @@
+<form [formGroup]="productNew1" (ngSubmit)="update()">
+  <div>
+    <label>ID</label>
+    <input type="text" formControlName="id" >
+  </div>
+  <div>
+    <label>Name</label>
+    <input type="text" formControlName="name">
+  </div>
+  <div>
+    <label>Price</label>
+    <input type="text" formControlName="price">
+  </div>
+  <div>
+    <label>Description</label>
+    <input type="text" formControlName="description">
+  </div>
+  <button type="submit">Save</button>
+</form>

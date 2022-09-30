@@ -1,0 +1,21 @@
+<h2>Trang danh sách sản phẩm</h2>
+<button type="button" [routerLink]="['/product/create']">Create</button>
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Description</th>
+    <th>Function</th>
+  </tr>
+  <tr *ngFor="let p of products">
+    <td>{{p.id}}</td>
+    <td>{{p.name}}</td>
+    <td>{{p.price}}</td>
+    <td>{{p.description}}</td>
+    <td>
+      <button type="button" [routerLink]="['/product/edit',p.id]">Update</button>
+      <button type="button" (click)="delete(p.id)">Delete</button>
+    </td>
+  </tr>
+</table>
