@@ -1,0 +1,58 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "name": "mì gói",
+      "price": 5000,
+      "description": "cay",
+      "category": {
+        "id": 1,
+        "name": "mì"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Duyen",
+      "price": "3123",
+      "description": "3123",
+      "category": {
+        "id": 2,
+        "name": "bút"
+      }
+    },
+    {
+      "id": 3,
+      "name": "42342",
+      "price": "342342",
+      "description": "4234",
+      "category": {
+        "id": 2,
+        "name": "bút"
+      }
+    },
+    {
+      "id": 4,
+      "name": "3213",
+      "price": "3123",
+      "description": "3123",
+      "category": {
+        "id": 2,
+        "name": "bút"
+      }
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "name": "mì gói"
+    },
+    {
+      "id": 2,
+      "name": "bút"
+    },
+    {
+      "id": 3,
+      "name": "xà bông"
+    }
+  ]
+}

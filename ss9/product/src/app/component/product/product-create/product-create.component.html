@@ -1,0 +1,28 @@
+<form [formGroup]="productForm" *ngIf="productForm" (ngSubmit)="create()">
+  <div>
+    <label>ID</label>
+    <input type="text" formControlName="id" readonly>
+  </div>
+  <div>
+    <label>Name</label>
+    <input type="text" formControlName="name">
+  </div>
+  <div>
+    <label>Price</label>
+    <input type="text" formControlName="price">
+  </div>
+  <div>
+    <label>Description</label>
+    <input type="text" formControlName="description">
+  </div>
+  <div>
+    <label>Category</label>
+    <select formControlName="category">
+      <option *ngFor="let c of categories" [value]="c.id">{{c.name}}</option>
+    </select>
+  </div>
+  <div >
+    <button>Save</button>
+  </div>
+</form>
+
