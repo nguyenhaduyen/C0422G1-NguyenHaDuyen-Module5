@@ -1,0 +1,20 @@
+<h2>Trang danh sach</h2>
+<button routerLink="/create">Create</button>
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Update</th>
+    <th>Delete</th>
+  </tr>
+  <tr *ngFor="let t of todo">
+    <td>{{t.id}}</td>
+    <td>{{t.name}}</td>
+    <td>
+      <button [routerLink]="['/update',t.id]">Update</button>
+    </td>
+    <td>
+      <button (click)="delete(t.id)">Delete</button>
+    </td>
+  </tr>
+</table>

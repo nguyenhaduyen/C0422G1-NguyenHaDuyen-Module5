@@ -1,10 +1,16 @@
 {
-  "posts": [
+  "todo": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "name": "qwe"
+    },
+    {
+      "id": 2,
+      "name": "fugiat veinam minus"
+    },
+    {
+      "id": 3,
+      "name": "sa"
     }
   ]
-
 }

@@ -1,0 +1,14 @@
+<form [formGroup]="todoForm" (ngSubmit)="update()" *ngIf="todoForm">
+  <div>
+    <label>ID</label>
+    <input type="text" readonly formControlName="id">
+  </div>
+  <div>
+    <label>Name</label>
+    <input type="text"  formControlName="name">
+  </div>
+
+  <div>
+    <button type="submit">Save</button>
+  </div>
+</form>
